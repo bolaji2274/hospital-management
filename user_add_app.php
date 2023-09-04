@@ -235,7 +235,7 @@
                        <?php
 
                        
-                       $query = mysqli_query ($conn, "select * from Adminpage  ");
+                       $query = mysqli_query ($conn, "select * from department  ");
                                 if((mysqli_num_rows($query)>0)){
                                     $options = (mysqli_fetch_all($query,MYSQLI_ASSOC));
                                     
@@ -246,7 +246,7 @@
 											<option>Select</option>
                                             <?php foreach($options as $option){
                                                 ?>
-											<option><?php echo $option ['department'] ?></option>
+											<option><?php echo $option ['Department'] ?></option>
                                             <?php
                                             }
                                             ?>

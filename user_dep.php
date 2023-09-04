@@ -199,7 +199,7 @@ $row = mysqli_fetch_assoc($result);
                             
                               
                                $count = 1;
-                               $result = mysqli_query ($conn, "select * from Department");
+                               $result = mysqli_query ($conn, "select * from department");
                                echo 'Available Department  is ' .  mysqli_num_rows($result);
                                if(mysqli_num_rows($result)>0){
                                    while($row = mysqli_fetch_assoc($result)){
